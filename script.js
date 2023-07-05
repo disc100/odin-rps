@@ -19,9 +19,7 @@ const getPlayerChoice = () => {
     "Scissors"
   ) {
     return choice[0].toUpperCase() + choice.slice(1).toLowerCase();
-  } else choice = prompt("What is your choice?");
-
-  console.log(choice);
+  } else return getPlayerChoice();
 };
 
 const playRound = (playerChoice, computerChoice) => {
