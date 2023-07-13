@@ -1,7 +1,149 @@
-#results {
-  border: solid black;
+div,
+h1,
+h2 {
+  display: flex;
 }
+
+h1,
+h2 {
+  justify-content: center;
+}
+
+body {
+  background-color: darkslateblue;
+}
+
+header {
+  color: aliceblue;
+}
+
+button {
+  background-color: darkgrey;
+  color: aliceblue;
+  min-height: 5rem;
+  min-width: 10rem;
+  border-radius: 10%;
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: grey;
+}
+
+button:active {
+  background-color: grey;
+  transform: translateY(2px);
+}
+
+#game-container,
+#btn-container,
+#results {
+  background-color: lightcyan;
+}
+
+#page-wrapper {
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* Game Container */
 
 #game-container {
   border: solid black;
+  justify-content: space-evenly;
+  min-height: 300px;
+  align-items: center;
+  width: 75%;
+  margin: 0 auto;
+  pointer-events: none;
+}
+
+.choice-container {
+  width: fit-content;
+  margin: 0;
+  height: fit-content;
+}
+
+.choice {
+  display: flex;
+  border: solid black;
+  min-height: 10rem;
+  min-width: 10rem;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  margin: 0;
+  background-color: aqua;
+}
+
+/* Button Container */
+
+#btn-container {
+  justify-content: space-evenly;
+  margin: 0 auto;
+  width: 75%;
+  padding: 2rem 0;
+  border: solid black;
+  border-bottom: none;
+  border-top: none;
+}
+
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Results */
+
+#results {
+  border: solid black;
+  align-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 75%;
+  margin: 0 auto;
+  height: 10rem;
+}
+
+#results > h2 {
+  width: 100%;
+  margin: 1rem auto;
+}
+
+h2 > #round-result {
+  padding-left: 1rem;
+}
+
+.score-box {
+  min-height: 10%;
+  min-width: 5rem;
+}
+
+#score-container {
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+h4 > span {
+  min-width: 2rem;
+}
+
+/* Winner */
+
+#winner-container {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#play-again {
+  height: 5rem;
+}
+
+#winner {
+  display: flex;
+  align-items: center;
+  color: aliceblue;
 }
